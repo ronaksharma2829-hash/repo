@@ -1,10 +1,11 @@
 name: First CI Job
 
-on:[push]
+on: [push]
 
-job:
+jobs:
   simple-job:
-     runs-on:ubuntu-latest
-     steps:
-       -name:Print message
-        run:echo "CI is running successfully"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "CI is running successfully"
